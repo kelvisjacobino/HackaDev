@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Proza+Libre&family=Satisfy&family=Spectral&display=swap');
+
+/* pagina */
+body{
+  background-color: #F7D6E7;
+  
+}
+h2{
+  margin-left: 2%;
+  font-size: 30px;
+  color: #ad7191;
+  box-shadow: 0px 2px ;
+}
+input{
+  
+  margin-left: 5px;
+  
+}
+
+.tipodecadastro{
+  text-align: left;
+  background-color: white;
+  /* border-radius: 15px; */
+  box-shadow: 3px 3px 3px 3px white;
+  width: auto;
+  
+}
+
+.fisjur{
+   
+    text-align: left;
+    justify-content: space-around;
+    display: flex;
+    width: 30%;
+    list-style: none;
+    font-size: 11pt;
+    
+}
+
+.formulariogeral{
+    list-style: none;
+    text-align: left;
+    justify-content: flex-start;
+    display:flex;
+}
+
+.dadospessoais{
+  width: 49%;
+  align-items: center;
+  display: inline-block;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px 3px white;
+  margin: 50px 4px 5px 3px;
+  position: relative;
+  top: -70px;
+  
+}
+  
+.endereco{
+    /* border: 1px solid darkgray; */
+    width: 49%;
+    display: inline-block;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px white;
+    height: 200%;
+    margin: -3px 4px 5px 3px;
+    
+ 
+}
+  
+.botaocancelar{
+   border-radius: 10px;
+   right: 50%;
+   text-align: center;
+   margin: 5px 4px 5px 3px;
+   font-size: 15px;
+   border: none ;
+      
+   
+}
+
+.botaocriarconta{
+    background-color: #876F77;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px 4px 5px 3px;
+    font-size: 15px;
+    border: none ;
+    
+  }
+
+  .botoes{
+    display: inline-block;
+    margin-top: 20px;
+
+    }
+
+    

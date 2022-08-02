@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Proza+Libre&family=Satisfy&family=Spectral&display=swap');
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+    /* fundo da pagina */
+body #primeiraDiv{
+    display: block;
+    position: relative;
+}
+
+#fundo {
+    background-image: url(/MontagemDoEcommerce/home/images/tela.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100vh;
+}
+
+.carrinho-aberto {
+    grid-column: 4/5;
+    grid-row: 1/4;
+    box-shadow: -4px 1px 17px 0px rgb(0 0 0 / 57%);
+}
+
+    /* cabeçalho do carrinho */
+#titulo-carrinho {
+    background-color: #efb9d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 8vh;
+
+}
+
+#titulo-carrinho h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#titulo-carrinho .seta {
+    position: absolute;
+    left: 1vh;
+    font-size: 1.5rem;
+    background-color: #efb9d6;
+    border: none;
+    color: black;
+}
+
+#busca-rapida {
+    height: 8vh;
+    position: relative;
+    background-color: rgb(248, 248, 248);
+}
+
+#busca-rapida .pesquisa {
+    position: absolute;
+    height: 4.5vh;
+    width: 85%;
+    right: 1.2vh;
+    top: 1.5vh;
+    border-radius: 10px ;
+    border: 1px solid #ccc;
+    box-shadow: 1px -1px 4px 0px rgba(0, 0, 0, 0.575);
+}
+
+#busca-rapida .lupa {
+    position: absolute;
+    top: 1.5vh;
+    padding: 1vh;
+    background-color: rgb(248, 248, 248);
+    border: none;
+    font-size: 1.1rem;
+}
+
+.contador {
+    background-color: #fff;
+    font-size: 0.8rem;
+    color: #a7a7a7;
+    padding: 0.5vh;
+}
+
+    /* corpo do carrinho */
+#produtos-carrinho {
+    background: rgb(255, 254, 254);
+    height: 84vh;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+#produtos-busca {
+    background: rgb(255, 254, 254);
+    height: 81vh;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+#produtos-do-carrinho {
+    border-bottom: solid 1px #ccc;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: 25%;
+    padding-top: 0.4rem;
+}
+
+#produtos-do-carrinho img {
+    max-height: 100%;
+    max-width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+
+#produtos-do-carrinho .remover {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    font-size: 0.6rem;
+    color: red;
+}
+
+#produtos-do-carrinho .nome {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 2%;
+}
+
+#produtos-do-carrinho .tamanho {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-size: 0.7rem;
+    color: #a7a7a7;
+    padding: 2%;
+}
+
+.quantidades {
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+#produtos-do-carrinho .menos {
+    background-color: #fff;
+    height: 3vh;
+    width: 3vh;
+    justify-content: center;
+    font-size: 0.7rem;
+    border: 1px solid black;
+    padding: 3%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#produtos-do-carrinho .menos:hover {
+    background-color: #efb9d6;
+}
+
+#produtos-do-carrinho .mais {
+    background-color: #fff;
+    height: 3vh;
+    width: 3vh;
+    justify-content: center;
+    font-size: 0.7rem;
+    border: 1px solid black;
+    padding: 3%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#produtos-do-carrinho .mais:hover {
+    background-color: #efb9d6;
+}
+
+#produtos-do-carrinho .quantidade {
+    background-color: #fff;
+    height: 3vh;
+    width: 3vh;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 3%;
+}
+
+#produtos-do-carrinho .preco {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    font-size: 0.9rem;
+    font-weight: bold;
+
+}
+
+#produtos-do-carrinho .parcela {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    font-size: 0.7rem;
+    color: #a7a7a7;
+
+}
+
+    /* footer do carrinho */
+#subtotal {
+    height: 8vh;
+    position: relative;
+}
+
+#subtotal button{
+    background-color: #1f1f1f;
+    border: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    box-shadow: 1px -1px 4px 0px rgba(0, 0, 0, 0.575);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#subtotal button:hover {
+    background-color: rgb(180, 168, 177);
+    color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .carrinho-aberto {
+        grid-column: 3/5;
+        grid-row: 1/4;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #fundo {
+        background: none;
+    }
+
+    .carrinho-aberto {
+        grid-column: 1/5;
+        grid-row: 1/4;
+    }
+}

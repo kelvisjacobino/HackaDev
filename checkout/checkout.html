@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/checkout/checkout.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="pagamento-envio">
+      <div class="envio">
+        <h1>Você</h1>
+        <div class="email-login">
+          <p>fashion@gmail.com</p>
+
+          <a href="/home/index.html">sair e trocar</a>
+        </div>
+        <h1>Destino</h1>
+        <div class="endereco">
+          <p class="endereco-cliente">
+            Plataforma lset<br />
+            Alameda dos Jacarandás, 140<br />
+            São Luiz - Belo Horizonte - MG<br />
+            31275-060
+          </p>
+
+          <div class="envio-sign">
+            <p>Endereço para envio</p>
+          </div>
+        </div>
+        <h1>Forma de envio</h1>
+        <div class="envio-form">
+          <div class="entrega-selection">
+            <table>
+              <tr>
+                <th>
+                  <div class="opcao-envio">
+                    <input
+                      type="radio"
+                      name="entrega-option"
+                      value="retirada-local"
+                    />
+                    <div class="opcao-descricao">
+                      <label> Retirada no Local </label>
+                      <label>Grátis</label>
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="opcao-envio">
+                    <input
+                      name="entrega-option"
+                      type="radio"
+                      value="frete gratis"
+                    />
+                    <div class="opcao-descricao">
+                      <label>Frete-grátis</label>
+                      <label>Grátis</label>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <div class="opcao-envio">
+                    <input name="entrega-option" type="radio" value="motoboy" />
+                    <div class="opcao-descricao">
+                      <label>Motoboy </label>
+                      <label>R$ 15,00</label>
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="opcao-envio">
+                    <input
+                      name="entrega-option"
+                      type="radio"
+                      value="retirada proxima"
+                    />
+                    <div class="opcao-descricao">
+                      <label>
+                        <p>Retirar próximo ao meu endereço</p>
+                        <p class="sub-descricao">Previsão: 4 dias úteis</p>
+                      </label>
+                      <label>R$ 20,70</label>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <div class="opcao-envio">
+                    <input name="entrega-option" type="radio" value="pac" />
+                    <div class="opcao-descricao">
+                      <label>
+                        <p>PAC</p>
+                        <p class="sub-descricao">labelrevisão: 5 dias úteis</p>
+                      </label>
+                      <label>R$ 32,20</label>
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="opcao-envio">
+                    <input name="entrega-option" type="radio" value="package" />
+                    <div class="opcao-descricao">
+                      <label>
+                        <p>Package</p>
+                        <p class="sub-descricao">labelrevisão: 4 dias úteis</p>
+                      </label>
+                      <label>R$ 35,50</label>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+            </table>
+            <div class="prazo-aviso">
+              <p>
+                Prazo de entrega dos Correios é de cinco dias após a postagem
+              </p>
+            </div>
+            <div class="observacoes">
+              <h4>Observações</h4>
+              <textarea
+                name="observação"
+                cols="60"
+                rows="4"
+                placeholder="Adicione alguma informação adicional relacionada ao seu pedido"
+              ></textarea>
+            </div>
+            <a
+              class="opcao-voltar"
+              href="/CarrinhoDeCompraAberto/carrinhoDeCompra.html"
+            >
+              Voltar para o carrinho</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
